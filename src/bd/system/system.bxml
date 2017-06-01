@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496260220"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496260220"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496260220"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496293051"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496293051"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496293051"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_axi_gpio_input_0\system_axi_gpio_input_0.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_input"/>

@@ -77,7 +77,7 @@ XTmrCtr TimerCounter;
 #define LED_MOVE_UPDATES 10
 
 static const rgb_t rgbColors[RGB_NUM_COLORS] =
-{
+{	//  {Red , Grn , Blu },
 		{0xFF, 0x00, 0x00},
 		{0xFF, 0xFF, 0x00},
 		{0x00, 0xFF, 0x00},

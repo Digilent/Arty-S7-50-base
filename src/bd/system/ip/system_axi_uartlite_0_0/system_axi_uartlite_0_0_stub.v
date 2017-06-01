@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Fri May 26 04:29:42 2017
-// Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
+// Date        : Wed May 31 21:58:20 2017
+// Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0_stub.v
+//               C:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0_stub.v
 // Design      : system_axi_uartlite_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1
