@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Fri May 26 04:32:25 2017
-// Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
+// Date        : Wed May 31 12:51:31 2017
+// Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_xbar_0/system_xbar_0_stub.v
+//               C:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_xbar_0/system_xbar_0_stub.v
 // Design      : system_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1
@@ -21,7 +21,7 @@ module system_xbar_0(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   m_axi_awprot, m_axi_awvalid, m_axi_awready, m_axi_wdata, m_axi_wstrb, m_axi_wvalid, 
   m_axi_wready, m_axi_bresp, m_axi_bvalid, m_axi_bready, m_axi_araddr, m_axi_arprot, 
   m_axi_arvalid, m_axi_arready, m_axi_rdata, m_axi_rresp, m_axi_rvalid, m_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="aclk,aresetn,s_axi_awaddr[31:0],s_axi_awprot[2:0],s_axi_awvalid[0:0],s_axi_awready[0:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid[0:0],s_axi_wready[0:0],s_axi_bresp[1:0],s_axi_bvalid[0:0],s_axi_bready[0:0],s_axi_araddr[31:0],s_axi_arprot[2:0],s_axi_arvalid[0:0],s_axi_arready[0:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid[0:0],s_axi_rready[0:0],m_axi_awaddr[223:0],m_axi_awprot[20:0],m_axi_awvalid[6:0],m_axi_awready[6:0],m_axi_wdata[223:0],m_axi_wstrb[27:0],m_axi_wvalid[6:0],m_axi_wready[6:0],m_axi_bresp[13:0],m_axi_bvalid[6:0],m_axi_bready[6:0],m_axi_araddr[223:0],m_axi_arprot[20:0],m_axi_arvalid[6:0],m_axi_arready[6:0],m_axi_rdata[223:0],m_axi_rresp[13:0],m_axi_rvalid[6:0],m_axi_rready[6:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="aclk,aresetn,s_axi_awaddr[31:0],s_axi_awprot[2:0],s_axi_awvalid[0:0],s_axi_awready[0:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid[0:0],s_axi_wready[0:0],s_axi_bresp[1:0],s_axi_bvalid[0:0],s_axi_bready[0:0],s_axi_araddr[31:0],s_axi_arprot[2:0],s_axi_arvalid[0:0],s_axi_arready[0:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid[0:0],s_axi_rready[0:0],m_axi_awaddr[255:0],m_axi_awprot[23:0],m_axi_awvalid[7:0],m_axi_awready[7:0],m_axi_wdata[255:0],m_axi_wstrb[31:0],m_axi_wvalid[7:0],m_axi_wready[7:0],m_axi_bresp[15:0],m_axi_bvalid[7:0],m_axi_bready[7:0],m_axi_araddr[255:0],m_axi_arprot[23:0],m_axi_arvalid[7:0],m_axi_arready[7:0],m_axi_rdata[255:0],m_axi_rresp[15:0],m_axi_rvalid[7:0],m_axi_rready[7:0]" */;
   input aclk;
   input aresetn;
   input [31:0]s_axi_awaddr;
@@ -43,23 +43,23 @@ module system_xbar_0(aclk, aresetn, s_axi_awaddr, s_axi_awprot,
   output [1:0]s_axi_rresp;
   output [0:0]s_axi_rvalid;
   input [0:0]s_axi_rready;
-  output [223:0]m_axi_awaddr;
-  output [20:0]m_axi_awprot;
-  output [6:0]m_axi_awvalid;
-  input [6:0]m_axi_awready;
-  output [223:0]m_axi_wdata;
-  output [27:0]m_axi_wstrb;
-  output [6:0]m_axi_wvalid;
-  input [6:0]m_axi_wready;
-  input [13:0]m_axi_bresp;
-  input [6:0]m_axi_bvalid;
-  output [6:0]m_axi_bready;
-  output [223:0]m_axi_araddr;
-  output [20:0]m_axi_arprot;
-  output [6:0]m_axi_arvalid;
-  input [6:0]m_axi_arready;
-  input [223:0]m_axi_rdata;
-  input [13:0]m_axi_rresp;
-  input [6:0]m_axi_rvalid;
-  output [6:0]m_axi_rready;
+  output [255:0]m_axi_awaddr;
+  output [23:0]m_axi_awprot;
+  output [7:0]m_axi_awvalid;
+  input [7:0]m_axi_awready;
+  output [255:0]m_axi_wdata;
+  output [31:0]m_axi_wstrb;
+  output [7:0]m_axi_wvalid;
+  input [7:0]m_axi_wready;
+  input [15:0]m_axi_bresp;
+  input [7:0]m_axi_bvalid;
+  output [7:0]m_axi_bready;
+  output [255:0]m_axi_araddr;
+  output [23:0]m_axi_arprot;
+  output [7:0]m_axi_arvalid;
+  input [7:0]m_axi_arready;
+  input [255:0]m_axi_rdata;
+  input [15:0]m_axi_rresp;
+  input [7:0]m_axi_rvalid;
+  output [7:0]m_axi_rready;
 endmodule

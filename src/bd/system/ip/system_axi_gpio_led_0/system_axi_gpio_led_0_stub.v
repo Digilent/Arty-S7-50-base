@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Fri May 26 04:27:03 2017
-// Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
+// Date        : Wed May 31 12:51:17 2017
+// Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_gpio_led_0/system_axi_gpio_led_0_stub.v
+//               C:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_gpio_led_0/system_axi_gpio_led_0_stub.v
 // Design      : system_axi_gpio_led_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1
@@ -17,9 +17,8 @@
 module system_axi_gpio_led_0(s_axi_aclk, s_axi_aresetn, s_axi_awaddr, 
   s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wvalid, s_axi_wready, 
   s_axi_bresp, s_axi_bvalid, s_axi_bready, s_axi_araddr, s_axi_arvalid, s_axi_arready, 
-  s_axi_rdata, s_axi_rresp, s_axi_rvalid, s_axi_rready, gpio_io_i, gpio_io_o, gpio_io_t, 
-  gpio2_io_i, gpio2_io_o, gpio2_io_t)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_i[3:0],gpio_io_o[3:0],gpio_io_t[3:0],gpio2_io_i[5:0],gpio2_io_o[5:0],gpio2_io_t[5:0]" */;
+  s_axi_rdata, s_axi_rresp, s_axi_rvalid, s_axi_rready, gpio_io_i, gpio_io_o, gpio_io_t)
+/* synthesis syn_black_box black_box_pad_pin="s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_i[3:0],gpio_io_o[3:0],gpio_io_t[3:0]" */;
   input s_axi_aclk;
   input s_axi_aresetn;
   input [8:0]s_axi_awaddr;
@@ -42,7 +41,4 @@ module system_axi_gpio_led_0(s_axi_aclk, s_axi_aresetn, s_axi_awaddr,
   input [3:0]gpio_io_i;
   output [3:0]gpio_io_o;
   output [3:0]gpio_io_t;
-  input [5:0]gpio2_io_i;
-  output [5:0]gpio2_io_o;
-  output [5:0]gpio2_io_t;
 endmodule

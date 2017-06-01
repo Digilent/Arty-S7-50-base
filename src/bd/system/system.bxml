@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1495797876"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1495797876"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1495797876"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496260220"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496260220"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496260220"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_axi_gpio_input_0\system_axi_gpio_input_0.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_input"/>
@@ -186,6 +186,14 @@
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_PWM_0_0\system_PWM_0_0.xci" Type="IP">
+        <Instance HierarchyPath="PWM_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="system.bmm" Type="BMM">

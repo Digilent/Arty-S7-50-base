@@ -439,3 +439,328 @@ MIG: 04:24:28 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <I
 MIG: 04:24:29 : Running implementation.xit
 MIG: 04:24:29 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
 MIG: 04:24:29 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 12:49:52 : Running synthesis.xit
+MIG: 12:49:52 : ################# RUNNING MIG BATCH ###################
+MIG: 12:49:52 : Writing IN file for 'system_mig_7series_0_0'...compDirPath: c:/Xilinx/Vivado/2017.1/data/ip/xilinx/mig_7series_v4_0... instDirPath: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0
+MIG: 12:49:52 : synp_flow:  -- synthesis_mode: Other
+MIG: 12:49:52 : outputDirectory: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/_tmp/
+MIG: 12:49:52 : vivado_mode: xpg_bd
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 1
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 : isPortInterface: 0
+MIG: 12:49:52 :  locked false  
+MIG: 12:49:52 : HDL Language: Verilog
+MIG: 12:49:53 : compInfo: false
+MIG: 12:49:53 : Vivado Options xc7s50 csga324 -1
+MIG: 12:49:53 : 1: xc7s50 2: csga324 3: -1
+MIG: 12:49:53 : relative mig path: coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe
+MIG: 12:49:53 : xilinx_path: C:/Xilinx/Vivado/2017.1/ids_lite/ISE
+MIG: 12:49:53 : I am in catch area
+MIG: 12:49:53 : Running C:/Xilinx/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe -cg_exc_inp c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/xil_txt.in -cg_exc_out c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/xil_txt.out ... 
+MIG: 12:50:06 : XML_INPUT_FILE: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/board.prj
+MIG: 12:50:06 : Component_Name: system_mig_7series_0_0
+MIG: 12:50:06 : Moving system_mig_7series_0_0 ...
+MIG: 12:50:06 : Moving system_mig_7series_0_0.veo ...
+MIG: 12:50:06 : Moving system_mig_7series_0_0_xmdf.tcl ...
+MIG: 12:50:06 : Running vhdl_synth_rpr.xit
+MIG: 12:50:06 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 12:50:06 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 12:50:06 : Running simulation.xit
+MIG: 12:50:07 : ################# RUNNING MIG BATCH ###################
+MIG: 12:50:07 : Writing IN file for 'system_mig_7series_0_0'...compDirPath: c:/Xilinx/Vivado/2017.1/data/ip/xilinx/mig_7series_v4_0... instDirPath: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0
+MIG: 12:50:07 : synp_flow:  -- synthesis_mode: Other
+MIG: 12:50:07 : outputDirectory: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/_tmp/
+MIG: 12:50:07 : vivado_mode: xpg_bd
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 1
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 : isPortInterface: 0
+MIG: 12:50:07 :  locked false  
+MIG: 12:50:07 : HDL Language: Verilog
+MIG: 12:50:07 : compInfo: false
+MIG: 12:50:07 : Vivado Options xc7s50 csga324 -1
+MIG: 12:50:07 : 1: xc7s50 2: csga324 3: -1
+MIG: 12:50:07 : relative mig path: coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe
+MIG: 12:50:07 : xilinx_path: C:/Xilinx/Vivado/2017.1/ids_lite/ISE
+MIG: 12:50:07 : I am in catch area
+MIG: 12:50:07 : Running C:/Xilinx/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe -cg_exc_inp c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/xil_txt.in -cg_exc_out c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/xil_txt.out ... 
+MIG: 12:50:17 : XML_INPUT_FILE: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/board.prj
+MIG: 12:50:17 : Component_Name: system_mig_7series_0_0
+MIG: 12:50:17 : Moving system_mig_7series_0_0 ...
+MIG: 12:50:17 : Moving system_mig_7series_0_0.veo ...
+MIG: 12:50:17 : Moving system_mig_7series_0_0_xmdf.tcl ...
+MIG: 12:50:18 : Running vlog_sim_rpr.xit .. PRASAD DBG1
+MIG: 12:50:18 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 12:50:18 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 12:50:18 : Running implementation.xit
+MIG: 12:50:18 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 12:50:18 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
