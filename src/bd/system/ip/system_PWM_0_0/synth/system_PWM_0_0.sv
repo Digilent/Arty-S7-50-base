@@ -50,7 +50,7 @@
 // IP VLNV: digilentinc.com:IP:PWM:2.0
 // IP Revision: 6
 
-(* X_CORE_INFO = "PWM_v2_0,Vivado 2017.1" *)
+(* X_CORE_INFO = "PWM_v2_0,Vivado 2017.2" *)
 (* CHECK_LICENSE_TYPE = "system_PWM_0_0,PWM_v2_0,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_PWM_0_0 (

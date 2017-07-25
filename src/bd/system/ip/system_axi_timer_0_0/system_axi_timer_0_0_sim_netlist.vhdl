@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Fri May 26 04:29:15 2017
--- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_timer_0_0/system_axi_timer_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+-- Date        : Mon Jul 24 14:28:20 2017
+-- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_axi_timer_0_0 -prefix
+--               system_axi_timer_0_0_ system_axi_timer_0_0_sim_netlist.vhdl
 -- Design      : system_axi_timer_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity system_axi_timer_0_0_cdc_sync is
     capturetrig0 : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_cdc_sync : entity is "cdc_sync";
 end system_axi_timer_0_0_cdc_sync;
 
 architecture STRUCTURE of system_axi_timer_0_0_cdc_sync is
@@ -454,8 +452,6 @@ entity system_axi_timer_0_0_counter_f is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_counter_f : entity is "counter_f";
 end system_axi_timer_0_0_counter_f;
 
 architecture STRUCTURE of system_axi_timer_0_0_counter_f is
@@ -3378,8 +3374,6 @@ entity system_axi_timer_0_0_mux_onehot_f is
     \LOAD_REG_GEN[31].LOAD_REG_I\ : in STD_LOGIC;
     \INFERRED_GEN.icount_out_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_mux_onehot_f : entity is "mux_onehot_f";
 end system_axi_timer_0_0_mux_onehot_f;
 
 architecture STRUCTURE of system_axi_timer_0_0_mux_onehot_f is
@@ -4069,8 +4063,6 @@ entity system_axi_timer_0_0_pselect_f is
     \bus2ip_addr_i_reg[4]\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     Q : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_pselect_f : entity is "pselect_f";
 end system_axi_timer_0_0_pselect_f;
 
 architecture STRUCTURE of system_axi_timer_0_0_pselect_f is
@@ -4361,8 +4353,6 @@ entity system_axi_timer_0_0_address_decoder is
     read_done1 : in STD_LOGIC;
     \bus2ip_addr_i_reg[4]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_address_decoder : entity is "address_decoder";
 end system_axi_timer_0_0_address_decoder;
 
 architecture STRUCTURE of system_axi_timer_0_0_address_decoder is
@@ -5803,8 +5793,6 @@ entity system_axi_timer_0_0_count_module is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_count_module : entity is "count_module";
 end system_axi_timer_0_0_count_module;
 
 architecture STRUCTURE of system_axi_timer_0_0_count_module is
@@ -7030,8 +7018,6 @@ entity system_axi_timer_0_0_timer_control is
     capturetrig0 : in STD_LOGIC;
     capturetrig1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_timer_control : entity is "timer_control";
 end system_axi_timer_0_0_timer_control;
 
 architecture STRUCTURE of system_axi_timer_0_0_timer_control is
@@ -8236,8 +8222,6 @@ entity system_axi_timer_0_0_slave_attachment is
     read_done1 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_slave_attachment : entity is "slave_attachment";
 end system_axi_timer_0_0_slave_attachment;
 
 architecture STRUCTURE of system_axi_timer_0_0_slave_attachment is
@@ -9251,8 +9235,6 @@ entity system_axi_timer_0_0_tc_core is
     capturetrig0 : in STD_LOGIC;
     capturetrig1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_tc_core : entity is "tc_core";
 end system_axi_timer_0_0_tc_core;
 
 architecture STRUCTURE of system_axi_timer_0_0_tc_core is
@@ -9746,8 +9728,6 @@ entity system_axi_timer_0_0_axi_lite_ipif is
     read_done1 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end system_axi_timer_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of system_axi_timer_0_0_axi_lite_ipif is
@@ -9929,8 +9909,6 @@ entity system_axi_timer_0_0_axi_timer is
   attribute C_TRIG0_ASSERT of system_axi_timer_0_0_axi_timer : entity is "1'b1";
   attribute C_TRIG1_ASSERT : string;
   attribute C_TRIG1_ASSERT of system_axi_timer_0_0_axi_timer : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_timer_0_0_axi_timer : entity is "axi_timer";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_timer_0_0_axi_timer : entity is "yes";
 end system_axi_timer_0_0_axi_timer;
@@ -10581,7 +10559,7 @@ entity system_axi_timer_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_timer_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_axi_timer_0_0 : entity is "axi_timer,Vivado 2017.1";
+  attribute x_core_info of system_axi_timer_0_0 : entity is "axi_timer,Vivado 2017.2";
 end system_axi_timer_0_0;
 
 architecture STRUCTURE of system_axi_timer_0_0 is

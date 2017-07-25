@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_intc:4.1
--- IP Revision: 9
+-- IP Revision: 10
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_intc_v4_1_9;
-USE axi_intc_v4_1_9.axi_intc;
+LIBRARY axi_intc_v4_1_10;
+USE axi_intc_v4_1_10.axi_intc;
 
 ENTITY system_microblaze_0_axi_intc_0 IS
   PORT (

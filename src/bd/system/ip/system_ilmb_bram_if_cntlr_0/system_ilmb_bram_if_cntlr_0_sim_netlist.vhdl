@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Fri May 26 04:31:39 2017
--- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+-- Date        : Mon Jul 24 14:32:32 2017
+-- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_ilmb_bram_if_cntlr_0 -prefix
+--               system_ilmb_bram_if_cntlr_0_ system_ilmb_bram_if_cntlr_0_sim_netlist.vhdl
 -- Design      : system_ilmb_bram_if_cntlr_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -142,8 +142,6 @@ entity system_ilmb_bram_if_cntlr_0_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of system_ilmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of system_ilmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is 2;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_ilmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end system_ilmb_bram_if_cntlr_0_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of system_ilmb_bram_if_cntlr_0_lmb_bram_if_cntlr is
@@ -453,7 +451,7 @@ entity system_ilmb_bram_if_cntlr_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_ilmb_bram_if_cntlr_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_ilmb_bram_if_cntlr_0 : entity is "lmb_bram_if_cntlr,Vivado 2017.1";
+  attribute x_core_info of system_ilmb_bram_if_cntlr_0 : entity is "lmb_bram_if_cntlr,Vivado 2017.2";
 end system_ilmb_bram_if_cntlr_0;
 
 architecture STRUCTURE of system_ilmb_bram_if_cntlr_0 is

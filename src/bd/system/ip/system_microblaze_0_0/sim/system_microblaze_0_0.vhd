@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:microblaze:10.0
--- IP Revision: 2
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY microblaze_v10_0_2;
-USE microblaze_v10_0_2.MicroBlaze;
+LIBRARY microblaze_v10_0_3;
+USE microblaze_v10_0_3.MicroBlaze;
 
 ENTITY system_microblaze_0_0 IS
   PORT (
@@ -275,6 +275,7 @@ ARCHITECTURE system_microblaze_0_0_arch OF system_microblaze_0_0 IS
       C_DEBUG_COUNTER_WIDTH : INTEGER;
       C_DEBUG_TRACE_SIZE : INTEGER;
       C_DEBUG_EXTERNAL_TRACE : INTEGER;
+      C_DEBUG_TRACE_ASYNC_RESET : INTEGER;
       C_DEBUG_PROFILE_SIZE : INTEGER;
       C_INTERRUPT_IS_EDGE : INTEGER;
       C_EDGE_IS_POSITIVE : INTEGER;
@@ -1013,6 +1014,7 @@ BEGIN
       C_DEBUG_COUNTER_WIDTH => 32,
       C_DEBUG_TRACE_SIZE => 8192,
       C_DEBUG_EXTERNAL_TRACE => 0,
+      C_DEBUG_TRACE_ASYNC_RESET => 0,
       C_DEBUG_PROFILE_SIZE => 0,
       C_INTERRUPT_IS_EDGE => 0,
       C_EDGE_IS_POSITIVE => 1,

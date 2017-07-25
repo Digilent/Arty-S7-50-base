@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:mdm:3.2
--- IP Revision: 9
+-- IP Revision: 10
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY mdm_v3_2_9;
-USE mdm_v3_2_9.MDM;
+LIBRARY mdm_v3_2_10;
+USE mdm_v3_2_10.MDM;
 
 ENTITY system_mdm_1_0 IS
   PORT (
@@ -92,6 +92,7 @@ ARCHITECTURE system_mdm_1_0_arch OF system_mdm_1_0 IS
       C_TRACE_DATA_WIDTH : INTEGER;
       C_TRACE_CLK_FREQ_HZ : INTEGER;
       C_TRACE_CLK_OUT_PHASE : INTEGER;
+      C_TRACE_ASYNC_RESET : INTEGER;
       C_S_AXI_ADDR_WIDTH : INTEGER;
       C_S_AXI_DATA_WIDTH : INTEGER;
       C_S_AXI_ACLK_FREQ_HZ : INTEGER;
@@ -1650,6 +1651,7 @@ BEGIN
       C_TRACE_DATA_WIDTH => 32,
       C_TRACE_CLK_FREQ_HZ => 200000000,
       C_TRACE_CLK_OUT_PHASE => 90,
+      C_TRACE_ASYNC_RESET => 0,
       C_S_AXI_ADDR_WIDTH => 4,
       C_S_AXI_DATA_WIDTH => 32,
       C_S_AXI_ACLK_FREQ_HZ => 100000000,

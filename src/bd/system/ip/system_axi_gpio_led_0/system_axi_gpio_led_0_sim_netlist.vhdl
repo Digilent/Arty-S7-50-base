@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Wed May 31 12:51:17 2017
+-- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+-- Date        : Mon Jul 24 14:27:59 2017
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               C:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_gpio_led_0/system_axi_gpio_led_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_axi_gpio_led_0 -prefix
+--               system_axi_gpio_led_0_ system_axi_gpio_led_0_sim_netlist.vhdl
 -- Design      : system_axi_gpio_led_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -30,7 +30,7 @@ entity system_axi_gpio_led_0_address_decoder is
     ip2bus_rdack_i_D1 : in STD_LOGIC;
     is_write_reg : in STD_LOGIC;
     ip2bus_wrack_i_D1 : in STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \bus2ip_addr_i_reg[8]\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     bus2ip_rnw_i_reg : in STD_LOGIC;
     rst_reg : in STD_LOGIC;
@@ -39,8 +39,6 @@ entity system_axi_gpio_led_0_address_decoder is
     start2 : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_gpio_led_0_address_decoder : entity is "address_decoder";
 end system_axi_gpio_led_0_address_decoder;
 
 architecture STRUCTURE of system_axi_gpio_led_0_address_decoder is
@@ -49,10 +47,8 @@ architecture STRUCTURE of system_axi_gpio_led_0_address_decoder is
   signal \^s_axi_arready\ : STD_LOGIC;
   signal \^s_axi_wready\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \Not_Dual.ALLOUT0_ND.READ_REG_GEN[3].GPIO_DBus_i[31]_i_3\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \Not_Dual.gpio_Data_Out[0]_i_2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \Not_Dual.gpio_Data_Out[1]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \Not_Dual.gpio_Data_Out[2]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \Not_Dual.gpio_Data_Out[3]_i_1\ : label is "soft_lutpair1";
 begin
   \MEM_DECODE_GEN[0].cs_out_i_reg[0]_0\ <= \^mem_decode_gen[0].cs_out_i_reg[0]_0\;
   s_axi_arready <= \^s_axi_arready\;
@@ -116,7 +112,7 @@ begin
       INIT => X"BA8A"
     )
         port map (
-      I0 => s_axi_wdata(5),
+      I0 => s_axi_wdata(7),
       I1 => \bus2ip_addr_i_reg[8]\(1),
       I2 => \^mem_decode_gen[0].cs_out_i_reg[0]_0\,
       I3 => s_axi_wdata(3),
@@ -127,7 +123,7 @@ begin
       INIT => X"BA8A"
     )
         port map (
-      I0 => s_axi_wdata(4),
+      I0 => s_axi_wdata(6),
       I1 => \bus2ip_addr_i_reg[8]\(1),
       I2 => \^mem_decode_gen[0].cs_out_i_reg[0]_0\,
       I3 => s_axi_wdata(2),
@@ -138,7 +134,7 @@ begin
       INIT => X"BA8A"
     )
         port map (
-      I0 => s_axi_wdata(3),
+      I0 => s_axi_wdata(5),
       I1 => \bus2ip_addr_i_reg[8]\(1),
       I2 => \^mem_decode_gen[0].cs_out_i_reg[0]_0\,
       I3 => s_axi_wdata(1),
@@ -149,7 +145,7 @@ begin
       INIT => X"BA8A"
     )
         port map (
-      I0 => s_axi_wdata(2),
+      I0 => s_axi_wdata(4),
       I1 => \bus2ip_addr_i_reg[8]\(1),
       I2 => \^mem_decode_gen[0].cs_out_i_reg[0]_0\,
       I3 => s_axi_wdata(0),
@@ -205,8 +201,6 @@ entity system_axi_gpio_led_0_cdc_sync is
     gpio_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_gpio_led_0_cdc_sync : entity is "cdc_sync";
 end system_axi_gpio_led_0_cdc_sync;
 
 architecture STRUCTURE of system_axi_gpio_led_0_cdc_sync is
@@ -476,8 +470,6 @@ entity system_axi_gpio_led_0_GPIO_Core is
     \bus2ip_addr_i_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     bus2ip_rnw_i_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_gpio_led_0_GPIO_Core : entity is "GPIO_Core";
 end system_axi_gpio_led_0_GPIO_Core;
 
 architecture STRUCTURE of system_axi_gpio_led_0_GPIO_Core is
@@ -493,8 +485,8 @@ architecture STRUCTURE of system_axi_gpio_led_0_GPIO_Core is
   signal \^gpio_xferack_reg\ : STD_LOGIC;
   signal iGPIO_xferAck : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of iGPIO_xferAck_i_1 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of ip2bus_rdack_i_D1_i_1 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of iGPIO_xferAck_i_1 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of ip2bus_rdack_i_D1_i_1 : label is "soft_lutpair4";
 begin
   GPIO_xferAck_i <= \^gpio_xferack_i\;
   gpio_io_o(3 downto 0) <= \^gpio_io_o\(3 downto 0);
@@ -784,14 +776,12 @@ entity system_axi_gpio_led_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_aresetn : in STD_LOGIC;
     gpio_xferAck_Reg : in STD_LOGIC;
     GPIO_xferAck_i : in STD_LOGIC;
     \ip2bus_data_i_D1_reg[28]\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_gpio_led_0_slave_attachment : entity is "slave_attachment";
 end system_axi_gpio_led_0_slave_attachment;
 
 architecture STRUCTURE of system_axi_gpio_led_0_slave_attachment is
@@ -826,12 +816,12 @@ architecture STRUCTURE of system_axi_gpio_led_0_slave_attachment is
   signal \state[1]_i_2_n_0\ : STD_LOGIC;
   signal \state[1]_i_3_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[0]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[1]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[2]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_2\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \bus2ip_addr_i[3]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of bus2ip_rnw_i_i_1 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[0]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[1]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[2]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_2\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \bus2ip_addr_i[3]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of bus2ip_rnw_i_i_1 : label is "soft_lutpair1";
 begin
   \Not_Dual.gpio_OE_reg[0]\ <= \^not_dual.gpio_oe_reg[0]\;
   Q(0) <= \^q\(0);
@@ -942,7 +932,7 @@ I_DECODER: entity work.system_axi_gpio_led_0_address_decoder
       s_axi_aclk => s_axi_aclk,
       s_axi_aresetn => s_axi_aresetn,
       s_axi_arready => \^s_axi_arready\,
-      s_axi_wdata(5 downto 0) => s_axi_wdata(5 downto 0),
+      s_axi_wdata(7 downto 0) => s_axi_wdata(7 downto 0),
       s_axi_wready => \^s_axi_wready\,
       start2 => start2
     );
@@ -1305,14 +1295,12 @@ entity system_axi_gpio_led_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_wvalid : in STD_LOGIC;
-    s_axi_wdata : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_aresetn : in STD_LOGIC;
     gpio_xferAck_Reg : in STD_LOGIC;
     GPIO_xferAck_i : in STD_LOGIC;
     \ip2bus_data_i_D1_reg[28]\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_gpio_led_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end system_axi_gpio_led_0_axi_lite_ipif;
 
 architecture STRUCTURE of system_axi_gpio_led_0_axi_lite_ipif is
@@ -1345,7 +1333,7 @@ I_SLAVE_ATTACHMENT: entity work.system_axi_gpio_led_0_slave_attachment
       s_axi_rdata(3 downto 0) => s_axi_rdata(3 downto 0),
       s_axi_rready => s_axi_rready,
       s_axi_rvalid => s_axi_rvalid,
-      s_axi_wdata(5 downto 0) => s_axi_wdata(5 downto 0),
+      s_axi_wdata(7 downto 0) => s_axi_wdata(7 downto 0),
       s_axi_wready => s_axi_wready,
       s_axi_wvalid => s_axi_wvalid
     );
@@ -1379,9 +1367,9 @@ entity system_axi_gpio_led_0_axi_gpio is
     gpio_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     gpio_io_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     gpio_io_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    gpio2_io_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    gpio2_io_t : out STD_LOGIC_VECTOR ( 5 downto 0 )
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio2_io_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio2_io_t : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute C_ALL_INPUTS : integer;
   attribute C_ALL_INPUTS of system_axi_gpio_led_0_axi_gpio : entity is 0;
@@ -1398,7 +1386,7 @@ entity system_axi_gpio_led_0_axi_gpio is
   attribute C_FAMILY : string;
   attribute C_FAMILY of system_axi_gpio_led_0_axi_gpio : entity is "spartan7";
   attribute C_GPIO2_WIDTH : integer;
-  attribute C_GPIO2_WIDTH of system_axi_gpio_led_0_axi_gpio : entity is 6;
+  attribute C_GPIO2_WIDTH of system_axi_gpio_led_0_axi_gpio : entity is 32;
   attribute C_GPIO_WIDTH : integer;
   attribute C_GPIO_WIDTH of system_axi_gpio_led_0_axi_gpio : entity is 4;
   attribute C_INTERRUPT_PRESENT : integer;
@@ -1413,8 +1401,6 @@ entity system_axi_gpio_led_0_axi_gpio is
   attribute C_TRI_DEFAULT of system_axi_gpio_led_0_axi_gpio : entity is -1;
   attribute C_TRI_DEFAULT_2 : integer;
   attribute C_TRI_DEFAULT_2 of system_axi_gpio_led_0_axi_gpio : entity is -1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_gpio_led_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_gpio_led_0_axi_gpio : entity is "yes";
   attribute ip_group : string;
@@ -1444,12 +1430,64 @@ architecture STRUCTURE of system_axi_gpio_led_0_axi_gpio is
   signal \^s_axi_rdata\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \^s_axi_wready\ : STD_LOGIC;
 begin
+  gpio2_io_o(31) <= \<const0>\;
+  gpio2_io_o(30) <= \<const0>\;
+  gpio2_io_o(29) <= \<const0>\;
+  gpio2_io_o(28) <= \<const0>\;
+  gpio2_io_o(27) <= \<const0>\;
+  gpio2_io_o(26) <= \<const0>\;
+  gpio2_io_o(25) <= \<const0>\;
+  gpio2_io_o(24) <= \<const0>\;
+  gpio2_io_o(23) <= \<const0>\;
+  gpio2_io_o(22) <= \<const0>\;
+  gpio2_io_o(21) <= \<const0>\;
+  gpio2_io_o(20) <= \<const0>\;
+  gpio2_io_o(19) <= \<const0>\;
+  gpio2_io_o(18) <= \<const0>\;
+  gpio2_io_o(17) <= \<const0>\;
+  gpio2_io_o(16) <= \<const0>\;
+  gpio2_io_o(15) <= \<const0>\;
+  gpio2_io_o(14) <= \<const0>\;
+  gpio2_io_o(13) <= \<const0>\;
+  gpio2_io_o(12) <= \<const0>\;
+  gpio2_io_o(11) <= \<const0>\;
+  gpio2_io_o(10) <= \<const0>\;
+  gpio2_io_o(9) <= \<const0>\;
+  gpio2_io_o(8) <= \<const0>\;
+  gpio2_io_o(7) <= \<const0>\;
+  gpio2_io_o(6) <= \<const0>\;
   gpio2_io_o(5) <= \<const0>\;
   gpio2_io_o(4) <= \<const0>\;
   gpio2_io_o(3) <= \<const0>\;
   gpio2_io_o(2) <= \<const0>\;
   gpio2_io_o(1) <= \<const0>\;
   gpio2_io_o(0) <= \<const0>\;
+  gpio2_io_t(31) <= \<const1>\;
+  gpio2_io_t(30) <= \<const1>\;
+  gpio2_io_t(29) <= \<const1>\;
+  gpio2_io_t(28) <= \<const1>\;
+  gpio2_io_t(27) <= \<const1>\;
+  gpio2_io_t(26) <= \<const1>\;
+  gpio2_io_t(25) <= \<const1>\;
+  gpio2_io_t(24) <= \<const1>\;
+  gpio2_io_t(23) <= \<const1>\;
+  gpio2_io_t(22) <= \<const1>\;
+  gpio2_io_t(21) <= \<const1>\;
+  gpio2_io_t(20) <= \<const1>\;
+  gpio2_io_t(19) <= \<const1>\;
+  gpio2_io_t(18) <= \<const1>\;
+  gpio2_io_t(17) <= \<const1>\;
+  gpio2_io_t(16) <= \<const1>\;
+  gpio2_io_t(15) <= \<const1>\;
+  gpio2_io_t(14) <= \<const1>\;
+  gpio2_io_t(13) <= \<const1>\;
+  gpio2_io_t(12) <= \<const1>\;
+  gpio2_io_t(11) <= \<const1>\;
+  gpio2_io_t(10) <= \<const1>\;
+  gpio2_io_t(9) <= \<const1>\;
+  gpio2_io_t(8) <= \<const1>\;
+  gpio2_io_t(7) <= \<const1>\;
+  gpio2_io_t(6) <= \<const1>\;
   gpio2_io_t(5) <= \<const1>\;
   gpio2_io_t(4) <= \<const1>\;
   gpio2_io_t(3) <= \<const1>\;
@@ -1528,7 +1566,8 @@ AXI_LITE_IPIF_I: entity work.system_axi_gpio_led_0_axi_lite_ipif
       s_axi_rdata(3 downto 0) => \^s_axi_rdata\(3 downto 0),
       s_axi_rready => s_axi_rready,
       s_axi_rvalid => s_axi_rvalid,
-      s_axi_wdata(5 downto 0) => s_axi_wdata(5 downto 0),
+      s_axi_wdata(7 downto 4) => s_axi_wdata(31 downto 28),
+      s_axi_wdata(3 downto 0) => s_axi_wdata(3 downto 0),
       s_axi_wready => \^s_axi_wready\,
       s_axi_wvalid => s_axi_wvalid
     );
@@ -1652,13 +1691,13 @@ entity system_axi_gpio_led_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_gpio_led_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_axi_gpio_led_0 : entity is "axi_gpio,Vivado 2017.1";
+  attribute x_core_info of system_axi_gpio_led_0 : entity is "axi_gpio,Vivado 2017.2";
 end system_axi_gpio_led_0;
 
 architecture STRUCTURE of system_axi_gpio_led_0 is
   signal NLW_U0_ip2intc_irpt_UNCONNECTED : STD_LOGIC;
-  signal NLW_U0_gpio2_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal NLW_U0_gpio2_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal NLW_U0_gpio2_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_U0_gpio2_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute C_ALL_INPUTS : integer;
   attribute C_ALL_INPUTS of U0 : label is 0;
   attribute C_ALL_INPUTS_2 : integer;
@@ -1674,7 +1713,7 @@ architecture STRUCTURE of system_axi_gpio_led_0 is
   attribute C_FAMILY : string;
   attribute C_FAMILY of U0 : label is "spartan7";
   attribute C_GPIO2_WIDTH : integer;
-  attribute C_GPIO2_WIDTH of U0 : label is 6;
+  attribute C_GPIO2_WIDTH of U0 : label is 32;
   attribute C_GPIO_WIDTH : integer;
   attribute C_GPIO_WIDTH of U0 : label is 4;
   attribute C_INTERRUPT_PRESENT : integer;
@@ -1695,9 +1734,9 @@ architecture STRUCTURE of system_axi_gpio_led_0 is
 begin
 U0: entity work.system_axi_gpio_led_0_axi_gpio
      port map (
-      gpio2_io_i(5 downto 0) => B"000000",
-      gpio2_io_o(5 downto 0) => NLW_U0_gpio2_io_o_UNCONNECTED(5 downto 0),
-      gpio2_io_t(5 downto 0) => NLW_U0_gpio2_io_t_UNCONNECTED(5 downto 0),
+      gpio2_io_i(31 downto 0) => B"00000000000000000000000000000000",
+      gpio2_io_o(31 downto 0) => NLW_U0_gpio2_io_o_UNCONNECTED(31 downto 0),
+      gpio2_io_t(31 downto 0) => NLW_U0_gpio2_io_t_UNCONNECTED(31 downto 0),
       gpio_io_i(3 downto 0) => gpio_io_i(3 downto 0),
       gpio_io_o(3 downto 0) => gpio_io_o(3 downto 0),
       gpio_io_t(3 downto 0) => gpio_io_t(3 downto 0),

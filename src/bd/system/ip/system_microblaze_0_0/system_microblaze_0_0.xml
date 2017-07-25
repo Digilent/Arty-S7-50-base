@@ -8426,7 +8426,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.RST.DEBUG_ARESETN" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 2))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.RST.DEBUG_ARESETN" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) > 0))">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -8761,11 +8761,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 26 11:24:26 UTC 2017</spirit:value>
+            <spirit:value>Tue Jul 25 00:45:20 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fb15dafc</spirit:value>
+            <spirit:value>7:6ad99def</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -8779,11 +8779,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 26 11:24:26 UTC 2017</spirit:value>
+            <spirit:value>Tue Jul 25 00:45:20 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fb15dafc</spirit:value>
+            <spirit:value>7:6ad99def</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -8798,11 +8798,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 26 11:24:26 UTC 2017</spirit:value>
+            <spirit:value>Tue Jul 25 00:45:20 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fb15dafc</spirit:value>
+            <spirit:value>7:6ad99def</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -8817,11 +8817,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 26 11:24:26 UTC 2017</spirit:value>
+            <spirit:value>Tue Jul 25 00:45:20 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f852f8f3</spirit:value>
+            <spirit:value>7:e0f4aa76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -8836,11 +8836,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 26 11:24:26 UTC 2017</spirit:value>
+            <spirit:value>Tue Jul 25 00:45:20 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f852f8f3</spirit:value>
+            <spirit:value>7:e0f4aa76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -8854,11 +8854,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri May 26 11:29:02 UTC 2017</spirit:value>
+            <spirit:value>Tue Jul 25 00:45:57 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:fb15dafc</spirit:value>
+            <spirit:value>7:6ad99def</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -12134,7 +12134,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_AWADDR" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_AWADDR" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12157,7 +12157,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_AWVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_AWVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12177,7 +12177,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_AWREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_AWREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12204,7 +12204,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_WDATA" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_WDATA" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12227,7 +12227,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_WVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_WVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12247,7 +12247,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_WREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_WREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12271,7 +12271,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_BRESP" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_BRESP" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12291,7 +12291,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_BVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_BVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12314,7 +12314,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_BREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_BREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12341,7 +12341,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_ARADDR" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_ARADDR" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12364,7 +12364,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_ARVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_ARVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12384,7 +12384,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_ARREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_ARREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12408,7 +12408,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RDATA" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RDATA" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12432,7 +12432,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RRESP" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RRESP" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12452,7 +12452,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RVALID" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12475,7 +12475,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_RREADY" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) >= 1))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -19491,6 +19491,11 @@
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEBUG_EXTERNAL_TRACE" spirit:choiceRef="choice_pairs_4873554b">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DEBUG_TRACE_ASYNC_RESET</spirit:name>
+        <spirit:displayName>Use Asynchrnous Reset for External Trace</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEBUG_TRACE_ASYNC_RESET" spirit:choiceRef="choice_pairs_4873554b">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DEBUG_PROFILE_SIZE</spirit:name>
         <spirit:displayName>Profile Buffer Size</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEBUG_PROFILE_SIZE" spirit:choiceRef="choice_pairs_5b1842a1">0</spirit:value>
@@ -20235,9 +20240,9 @@
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/796f/hdl/microblaze_v10_0_vh_rfs.vhd</spirit:name>
+        <spirit:name>../../ipshared/fe06/hdl/microblaze_v10_0_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>microblaze_v10_0_2</spirit:logicalName>
+        <spirit:logicalName>microblaze_v10_0_3</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -20267,10 +20272,10 @@
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/796f/hdl/microblaze_v10_0_vh_rfs.vhd</spirit:name>
+        <spirit:name>../../ipshared/fe06/hdl/microblaze_v10_0_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>microblaze_v10_0_2</spirit:logicalName>
+        <spirit:logicalName>microblaze_v10_0_3</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -20284,22 +20289,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
       <spirit:file>
+        <spirit:name>stats.txt</spirit:name>
+        <spirit:userFileType>text</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>system_microblaze_0_0.dcp</spirit:name>
         <spirit:userFileType>dcp</spirit:userFileType>
         <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>system_microblaze_0_0_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>system_microblaze_0_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
@@ -20314,6 +20312,18 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_microblaze_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_microblaze_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -21230,6 +21240,18 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_EXTERNAL_TRACE">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_DEBUG_TRACE_ASYNC_RESET</spirit:name>
+      <spirit:displayName>Use Asynchrnous Reset for External Trace</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DEBUG_TRACE_ASYNC_RESET" spirit:order="5655" spirit:configGroups="1 NoDisplay">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_TRACE_ASYNC_RESET">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -22155,7 +22177,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_ADDR_TAG_BITS</spirit:name>
       <spirit:displayName>Set number of I-cache address tag bits</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_ADDR_TAG_BITS" spirit:order="3200" spirit:configGroups="3 NoDisplay">17</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_ADDR_TAG_BITS" spirit:order="3200" spirit:configGroups="3 NoDisplay">12</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -22387,7 +22409,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_DCACHE_ADDR_TAG</spirit:name>
       <spirit:displayName>Set number of D-cache address tag bits</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:order="3230" spirit:configGroups="3 NoDisplay">17</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:order="3230" spirit:configGroups="3 NoDisplay">12</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -22743,7 +22765,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>MicroBlaze</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK.CLK_DOMAIN" xilinx:valueSource="ip_propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK.FREQ_HZ" xilinx:valueSource="ip_propagated"/>
@@ -22830,14 +22852,14 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2017.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="09e01662"/>
+      <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="aa9fc91f"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="8a758f08"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="2cb87d6b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f24fc16d"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="8501b61a"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="7edeb2cf"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="afdf4410"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="613beace"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="455ce909"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="b1dd5571"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d1c7b65e"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

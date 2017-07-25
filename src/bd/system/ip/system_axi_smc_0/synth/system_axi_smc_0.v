@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:smartconnect:1.0
-// IP Revision: 4
+// IP Revision: 5
 
-(* X_CORE_INFO = "bd_44e3,Vivado 2017.1" *)
+(* X_CORE_INFO = "bd_44e3,Vivado 2017.2" *)
 (* CHECK_LICENSE_TYPE = "system_axi_smc_0,bd_44e3,{}" *)
-(* CORE_GENERATION_INFO = "system_axi_smc_0,bd_44e3,{x_ipProduct=Vivado 2017.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=smartconnect,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,NUM_MI=1,NUM_SI=2,NUM_CLKS=2,HAS_ARESETN=1,ADVANCED_PROPERTIES=0,Component_Name=system_axi_smc_0}" *)
+(* CORE_GENERATION_INFO = "system_axi_smc_0,bd_44e3,{x_ipProduct=Vivado 2017.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=smartconnect,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,NUM_MI=1,NUM_SI=2,NUM_CLKS=2,HAS_ARESETN=1,ADVANCED_PROPERTIES=0,Component_Name=system_axi_smc_0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_axi_smc_0 (
   aclk,

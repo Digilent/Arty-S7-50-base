@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Fri May 26 04:29:07 2017
--- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_axi_quad_spi_0_0/system_axi_quad_spi_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+-- Date        : Mon Jul 24 14:28:01 2017
+-- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_axi_quad_spi_0_0 -prefix
+--               system_axi_quad_spi_0_0_ system_axi_quad_spi_0_0_sim_netlist.vhdl
 -- Design      : system_axi_quad_spi_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -590,8 +590,6 @@ entity system_axi_quad_spi_0_0_cdc_sync is
     prmry_in : in STD_LOGIC;
     ext_spi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_cdc_sync : entity is "cdc_sync";
 end system_axi_quad_spi_0_0_cdc_sync;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_cdc_sync is
@@ -775,8 +773,6 @@ entity system_axi_quad_spi_0_0_counter_f is
     s_axi_aclk : in STD_LOGIC;
     \CONTROL_REG_3_4_GENERATE[3].SPICR_data_int_reg[3]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_counter_f : entity is "counter_f";
 end system_axi_quad_spi_0_0_counter_f;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_counter_f is
@@ -1631,8 +1627,6 @@ entity system_axi_quad_spi_0_0_cross_clk_sync_fifo_1 is
     transfer_start_d2 : in STD_LOGIC;
     \RATIO_OF_2_GENERATE.Count_reg[4]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_cross_clk_sync_fifo_1 : entity is "cross_clk_sync_fifo_1";
 end system_axi_quad_spi_0_0_cross_clk_sync_fifo_1;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_cross_clk_sync_fifo_1 is
@@ -2641,8 +2635,6 @@ entity system_axi_quad_spi_0_0_interrupt_control is
     \LEGACY_MD_WR_RD_ACK_GEN.ip2Bus_RdAck_core_reg_reg\ : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_interrupt_control : entity is "interrupt_control";
 end system_axi_quad_spi_0_0_interrupt_control;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_interrupt_control is
@@ -3179,8 +3171,6 @@ entity system_axi_quad_spi_0_0_qspi_cntrl_reg is
     \LEGACY_MD_WR_RD_ACK_GEN.ip2Bus_RdAck_core_reg_reg\ : in STD_LOGIC;
     \goreg_dm.dout_i_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_cntrl_reg : entity is "qspi_cntrl_reg";
 end system_axi_quad_spi_0_0_qspi_cntrl_reg;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_cntrl_reg is
@@ -3533,8 +3523,6 @@ entity system_axi_quad_spi_0_0_qspi_fifo_ifmodule is
     Transmit_ip2bus_error0 : in STD_LOGIC;
     tx_occ_msb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_fifo_ifmodule : entity is "qspi_fifo_ifmodule";
 end system_axi_quad_spi_0_0_qspi_fifo_ifmodule;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_fifo_ifmodule is
@@ -3656,8 +3644,6 @@ entity system_axi_quad_spi_0_0_qspi_mode_control_logic is
     spicr_4_cpha_to_spi_clk : in STD_LOGIC;
     \LOGIC_GENERATION_FDR.SPICR_3_CPOL_AX2S_2\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_mode_control_logic : entity is "qspi_mode_control_logic";
 end system_axi_quad_spi_0_0_qspi_mode_control_logic;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_mode_control_logic is
@@ -5539,8 +5525,6 @@ entity system_axi_quad_spi_0_0_qspi_startup_block is
     s_axi_aclk : in STD_LOGIC;
     SCK_O_int : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_startup_block : entity is "qspi_startup_block";
 end system_axi_quad_spi_0_0_qspi_startup_block;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_startup_block is
@@ -5713,8 +5697,6 @@ entity system_axi_quad_spi_0_0_qspi_status_slave_sel_reg is
     rx_fifo_count : in STD_LOGIC_VECTOR ( 0 to 0 );
     \CONTROL_REG_5_9_GENERATE[9].SPICR_data_int_reg[9]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_status_slave_sel_reg : entity is "qspi_status_slave_sel_reg";
 end system_axi_quad_spi_0_0_qspi_status_slave_sel_reg;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_status_slave_sel_reg is
@@ -5778,8 +5760,6 @@ entity system_axi_quad_spi_0_0_reset_sync_module is
     reset2ip_reset_int : in STD_LOGIC;
     ext_spi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_reset_sync_module : entity is "reset_sync_module";
 end system_axi_quad_spi_0_0_reset_sync_module;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_reset_sync_module is
@@ -5845,8 +5825,6 @@ entity system_axi_quad_spi_0_0_soft_reset is
     p_5_in_0 : in STD_LOGIC;
     p_2_in_0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_soft_reset : entity is "soft_reset";
 end system_axi_quad_spi_0_0_soft_reset;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_soft_reset is
@@ -6373,8 +6351,6 @@ entity system_axi_quad_spi_0_0_dmem is
     ext_spi_clk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_dmem : entity is "dmem";
 end system_axi_quad_spi_0_0_dmem;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_dmem is
@@ -7525,8 +7501,6 @@ entity system_axi_quad_spi_0_0_rd_bin_cntr is
     ext_spi_clk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_rd_bin_cntr : entity is "rd_bin_cntr";
 end system_axi_quad_spi_0_0_rd_bin_cntr;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_rd_bin_cntr is
@@ -8432,8 +8406,6 @@ entity system_axi_quad_spi_0_0_rd_fwft is
     \qspo_int_reg[8]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     register_Data_slvsel_int : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_rd_fwft : entity is "rd_fwft";
 end system_axi_quad_spi_0_0_rd_fwft;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_rd_fwft is
@@ -8938,8 +8910,6 @@ entity system_axi_quad_spi_0_0_rd_status_flags_as is
     ext_spi_clk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_rd_status_flags_as : entity is "rd_status_flags_as";
 end system_axi_quad_spi_0_0_rd_status_flags_as;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_rd_status_flags_as is
@@ -9062,8 +9032,6 @@ entity system_axi_quad_spi_0_0_rom is
     Rst_to_spi : in STD_LOGIC;
     ext_spi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_rom : entity is "rom";
 end system_axi_quad_spi_0_0_rom;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_rom is
@@ -9557,8 +9525,6 @@ entity system_axi_quad_spi_0_0_synchronizer_ff is
     in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     ext_spi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_synchronizer_ff : entity is "synchronizer_ff";
 end system_axi_quad_spi_0_0_synchronizer_ff;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_synchronizer_ff is
@@ -11386,8 +11352,6 @@ entity system_axi_quad_spi_0_0_wr_bin_cntr is
     s_axi_aclk : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_wr_bin_cntr : entity is "wr_bin_cntr";
 end system_axi_quad_spi_0_0_wr_bin_cntr;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_wr_bin_cntr is
@@ -12614,8 +12578,6 @@ entity system_axi_quad_spi_0_0_wr_status_flags_as is
     Bus_RNW_reg : in STD_LOGIC;
     p_6_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_wr_status_flags_as : entity is "wr_status_flags_as";
 end system_axi_quad_spi_0_0_wr_status_flags_as;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_wr_status_flags_as is
@@ -12859,8 +12821,6 @@ entity system_axi_quad_spi_0_0_address_decoder is
     rst_reg : in STD_LOGIC;
     spicr_5_txfifo_rst_frm_axi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_address_decoder : entity is "address_decoder";
 end system_axi_quad_spi_0_0_address_decoder;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_address_decoder is
@@ -14140,8 +14100,6 @@ entity system_axi_quad_spi_0_0_clk_x_pntrs is
     ext_spi_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_clk_x_pntrs : entity is "clk_x_pntrs";
 end system_axi_quad_spi_0_0_clk_x_pntrs;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_clk_x_pntrs is
@@ -15469,8 +15427,6 @@ entity system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11_synth is
     Rst_to_spi : in STD_LOGIC;
     ext_spi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11_synth : entity is "dist_mem_gen_v8_0_11_synth";
 end system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11_synth;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11_synth is
@@ -15519,8 +15475,6 @@ entity system_axi_quad_spi_0_0_memory is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gpregsm1.curr_fwft_state_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_memory : entity is "memory";
 end system_axi_quad_spi_0_0_memory;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_memory is
@@ -15933,8 +15887,6 @@ entity system_axi_quad_spi_0_0_rd_logic is
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 7 downto 0 );
     register_Data_slvsel_int : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_rd_logic : entity is "rd_logic";
 end system_axi_quad_spi_0_0_rd_logic;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_rd_logic is
@@ -16078,8 +16030,6 @@ entity system_axi_quad_spi_0_0_reset_blk_ramfifo is
     s_axi_aclk : in STD_LOGIC;
     reset_TxFIFO_ptr_int : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
 end system_axi_quad_spi_0_0_reset_blk_ramfifo;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_reset_blk_ramfifo is
@@ -16684,8 +16634,6 @@ entity system_axi_quad_spi_0_0_wr_logic is
     RD_PNTR_WR : in STD_LOGIC_VECTOR ( 7 downto 0 );
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_wr_logic : entity is "wr_logic";
 end system_axi_quad_spi_0_0_wr_logic;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_wr_logic is
@@ -16894,8 +16842,6 @@ entity system_axi_quad_spi_0_0_slave_attachment is
     spicr_6_rxfifo_rst_frm_axi_clk : in STD_LOGIC;
     \LEGACY_MD_IP2BUS_DATA_GEN.IP2Bus_Data_reg[0]\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_slave_attachment : entity is "slave_attachment";
 end system_axi_quad_spi_0_0_slave_attachment;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_slave_attachment is
@@ -17809,8 +17755,6 @@ entity system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11 is
     Rst_to_spi : in STD_LOGIC;
     ext_spi_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11 : entity is "dist_mem_gen_v8_0_11";
 end system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_dist_mem_gen_v8_0_11 is
@@ -17879,8 +17823,6 @@ entity system_axi_quad_spi_0_0_fifo_generator_ramfifo is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
 end system_axi_quad_spi_0_0_fifo_generator_ramfifo;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_fifo_generator_ramfifo is
@@ -18281,8 +18223,6 @@ entity system_axi_quad_spi_0_0_axi_lite_ipif is
     spicr_6_rxfifo_rst_frm_axi_clk : in STD_LOGIC;
     \LEGACY_MD_IP2BUS_DATA_GEN.IP2Bus_Data_reg[0]\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end system_axi_quad_spi_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_axi_lite_ipif is
@@ -18411,8 +18351,6 @@ entity system_axi_quad_spi_0_0_qspi_look_up_logic is
     D : in STD_LOGIC;
     \qspi_cntrl_ps_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_look_up_logic : entity is "qspi_look_up_logic";
 end system_axi_quad_spi_0_0_qspi_look_up_logic;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_look_up_logic is
@@ -18637,8 +18575,6 @@ entity system_axi_quad_spi_0_0_fifo_generator_top is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_fifo_generator_top : entity is "fifo_generator_top";
 end system_axi_quad_spi_0_0_fifo_generator_top;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_fifo_generator_top is
@@ -18837,8 +18773,6 @@ entity system_axi_quad_spi_0_0_fifo_generator_v13_1_4_synth is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_fifo_generator_v13_1_4_synth : entity is "fifo_generator_v13_1_4_synth";
 end system_axi_quad_spi_0_0_fifo_generator_v13_1_4_synth;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_fifo_generator_v13_1_4_synth is
@@ -19037,8 +18971,6 @@ entity system_axi_quad_spi_0_0_fifo_generator_v13_1_4 is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_fifo_generator_v13_1_4 : entity is "fifo_generator_v13_1_4";
 end system_axi_quad_spi_0_0_fifo_generator_v13_1_4;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_fifo_generator_v13_1_4 is
@@ -19254,8 +19186,6 @@ entity system_axi_quad_spi_0_0_async_fifo_fg is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \RX_DATA_SCK_RATIO_2_GEN1.receive_Data_int_reg[0]\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_async_fifo_fg : entity is "async_fifo_fg";
 end system_axi_quad_spi_0_0_async_fifo_fg;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_async_fifo_fg is
@@ -19505,8 +19435,6 @@ entity system_axi_quad_spi_0_0_qspi_core_interface is
     io2_i_sync : in STD_LOGIC;
     io3_i_sync : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_qspi_core_interface : entity is "qspi_core_interface";
 end system_axi_quad_spi_0_0_qspi_core_interface;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_qspi_core_interface is
@@ -20769,8 +20697,6 @@ entity system_axi_quad_spi_0_0_axi_quad_spi_top is
     s_axi_bready : in STD_LOGIC;
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_axi_quad_spi_top : entity is "axi_quad_spi_top";
 end system_axi_quad_spi_0_0_axi_quad_spi_top;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0_axi_quad_spi_top is
@@ -21321,8 +21247,6 @@ entity system_axi_quad_spi_0_0_axi_quad_spi is
   attribute C_USE_STARTUP_EXT of system_axi_quad_spi_0_0_axi_quad_spi : entity is 0;
   attribute C_XIP_MODE : integer;
   attribute C_XIP_MODE of system_axi_quad_spi_0_0_axi_quad_spi : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_quad_spi_0_0_axi_quad_spi : entity is "axi_quad_spi";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_quad_spi_0_0_axi_quad_spi : entity is "yes";
 end system_axi_quad_spi_0_0_axi_quad_spi;
@@ -21521,7 +21445,7 @@ entity system_axi_quad_spi_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_quad_spi_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_axi_quad_spi_0_0 : entity is "axi_quad_spi,Vivado 2017.1";
+  attribute x_core_info of system_axi_quad_spi_0_0 : entity is "axi_quad_spi,Vivado 2017.2";
 end system_axi_quad_spi_0_0;
 
 architecture STRUCTURE of system_axi_quad_spi_0_0 is

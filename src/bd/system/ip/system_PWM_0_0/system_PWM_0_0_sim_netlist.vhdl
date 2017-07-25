@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Wed May 31 12:51:18 2017
+-- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+-- Date        : Mon Jul 24 14:33:22 2017
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_PWM_0_0/system_PWM_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_PWM_0_0 -prefix
+--               system_PWM_0_0_ system_PWM_0_0_sim_netlist.vhdl
 -- Design      : system_PWM_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -42,8 +42,6 @@ entity system_PWM_0_0_PWM_AXI is
     pwm_axi_wvalid : in STD_LOGIC;
     pwm_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_PWM_0_0_PWM_AXI : entity is "PWM_AXI";
 end system_PWM_0_0_PWM_AXI;
 
 architecture STRUCTURE of system_PWM_0_0_PWM_AXI is
@@ -5402,8 +5400,6 @@ entity system_PWM_0_0_PWM_v2_0 is
     pwm_axi_bready : in STD_LOGIC;
     pwm_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_PWM_0_0_PWM_v2_0 : entity is "PWM_v2_0";
 end system_PWM_0_0_PWM_v2_0;
 
 architecture STRUCTURE of system_PWM_0_0_PWM_v2_0 is
@@ -12171,7 +12167,7 @@ entity system_PWM_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of system_PWM_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of system_PWM_0_0 : entity is "PWM_v2_0,Vivado 2017.1";
+  attribute X_CORE_INFO of system_PWM_0_0 : entity is "PWM_v2_0,Vivado 2017.2";
 end system_PWM_0_0;
 
 architecture STRUCTURE of system_PWM_0_0 is

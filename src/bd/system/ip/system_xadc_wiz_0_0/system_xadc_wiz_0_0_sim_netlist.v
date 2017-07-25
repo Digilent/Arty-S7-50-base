@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Fri May 26 04:31:10 2017
-// Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_sim_netlist.v
+// Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+// Date        : Mon Jul 24 14:31:41 2017
+// Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode funcsim -rename_top system_xadc_wiz_0_0 -prefix
+//               system_xadc_wiz_0_0_ system_xadc_wiz_0_0_sim_netlist.v
 // Design      : system_xadc_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,213 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* NotValidForBitStream *)
-module system_xadc_wiz_0_0
-   (s_axi_aclk,
-    s_axi_aresetn,
-    s_axi_awaddr,
-    s_axi_awvalid,
-    s_axi_awready,
-    s_axi_wdata,
-    s_axi_wstrb,
-    s_axi_wvalid,
-    s_axi_wready,
-    s_axi_bresp,
-    s_axi_bvalid,
-    s_axi_bready,
-    s_axi_araddr,
-    s_axi_arvalid,
-    s_axi_arready,
-    s_axi_rdata,
-    s_axi_rresp,
-    s_axi_rvalid,
-    s_axi_rready,
-    ip2intc_irpt,
-    vauxp0,
-    vauxn0,
-    vauxp1,
-    vauxn1,
-    vauxp2,
-    vauxn2,
-    vauxp3,
-    vauxn3,
-    vauxp8,
-    vauxn8,
-    vauxp9,
-    vauxn9,
-    vauxp10,
-    vauxn10,
-    vauxp11,
-    vauxn11,
-    busy_out,
-    channel_out,
-    eoc_out,
-    eos_out,
-    ot_out,
-    vccaux_alarm_out,
-    vccint_alarm_out,
-    user_temp_alarm_out,
-    alarm_out,
-    temp_out,
-    vp_in,
-    vn_in);
-  input s_axi_aclk;
-  input s_axi_aresetn;
-  input [10:0]s_axi_awaddr;
-  input s_axi_awvalid;
-  output s_axi_awready;
-  input [31:0]s_axi_wdata;
-  input [3:0]s_axi_wstrb;
-  input s_axi_wvalid;
-  output s_axi_wready;
-  output [1:0]s_axi_bresp;
-  output s_axi_bvalid;
-  input s_axi_bready;
-  input [10:0]s_axi_araddr;
-  input s_axi_arvalid;
-  output s_axi_arready;
-  output [31:0]s_axi_rdata;
-  output [1:0]s_axi_rresp;
-  output s_axi_rvalid;
-  input s_axi_rready;
-  output ip2intc_irpt;
-  input vauxp0;
-  input vauxn0;
-  input vauxp1;
-  input vauxn1;
-  input vauxp2;
-  input vauxn2;
-  input vauxp3;
-  input vauxn3;
-  input vauxp8;
-  input vauxn8;
-  input vauxp9;
-  input vauxn9;
-  input vauxp10;
-  input vauxn10;
-  input vauxp11;
-  input vauxn11;
-  output busy_out;
-  output [4:0]channel_out;
-  output eoc_out;
-  output eos_out;
-  output ot_out;
-  output vccaux_alarm_out;
-  output vccint_alarm_out;
-  output user_temp_alarm_out;
-  output alarm_out;
-  output [11:0]temp_out;
-  input vp_in;
-  input vn_in;
-
-  wire alarm_out;
-  wire busy_out;
-  wire [4:0]channel_out;
-  wire eoc_out;
-  wire eos_out;
-  wire ip2intc_irpt;
-  wire ot_out;
-  wire s_axi_aclk;
-  wire [10:0]s_axi_araddr;
-  wire s_axi_aresetn;
-  wire s_axi_arready;
-  wire s_axi_arvalid;
-  wire [10:0]s_axi_awaddr;
-  wire s_axi_awready;
-  wire s_axi_awvalid;
-  wire s_axi_bready;
-  wire [1:0]s_axi_bresp;
-  wire s_axi_bvalid;
-  wire [31:0]s_axi_rdata;
-  wire s_axi_rready;
-  wire [1:0]s_axi_rresp;
-  wire s_axi_rvalid;
-  wire [31:0]s_axi_wdata;
-  wire s_axi_wready;
-  wire [3:0]s_axi_wstrb;
-  wire s_axi_wvalid;
-  wire [11:0]temp_out;
-  wire user_temp_alarm_out;
-  wire vauxn0;
-  wire vauxn1;
-  wire vauxn10;
-  wire vauxn11;
-  wire vauxn2;
-  wire vauxn3;
-  wire vauxn8;
-  wire vauxn9;
-  wire vauxp0;
-  wire vauxp1;
-  wire vauxp10;
-  wire vauxp11;
-  wire vauxp2;
-  wire vauxp3;
-  wire vauxp8;
-  wire vauxp9;
-  wire vccaux_alarm_out;
-  wire vccint_alarm_out;
-  wire vn_in;
-  wire vp_in;
-  wire [6:3]NLW_U0_alarm_out_UNCONNECTED;
-
-  (* C_FAMILY = "virtex7" *) 
-  (* C_INCLUDE_INTR = "1" *) 
-  (* C_INSTANCE = "system_xadc_wiz_0_0_axi_xadc" *) 
-  (* C_SIM_MONITOR_FILE = "design.txt" *) 
-  (* C_S_AXI_ADDR_WIDTH = "11" *) 
-  (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* hdl = "VHDL" *) 
-  (* ip_group = "LOGICORE" *) 
-  (* iptype = "PERIPHERAL" *) 
-  system_xadc_wiz_0_0_system_xadc_wiz_0_0_axi_xadc U0
-       (.alarm_out({alarm_out,NLW_U0_alarm_out_UNCONNECTED[6:3],vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out}),
-        .busy_out(busy_out),
-        .channel_out(channel_out),
-        .eoc_out(eoc_out),
-        .eos_out(eos_out),
-        .ip2intc_irpt(ip2intc_irpt),
-        .ot_out(ot_out),
-        .s_axi_aclk(s_axi_aclk),
-        .s_axi_araddr(s_axi_araddr),
-        .s_axi_aresetn(s_axi_aresetn),
-        .s_axi_arready(s_axi_arready),
-        .s_axi_arvalid(s_axi_arvalid),
-        .s_axi_awaddr(s_axi_awaddr),
-        .s_axi_awready(s_axi_awready),
-        .s_axi_awvalid(s_axi_awvalid),
-        .s_axi_bready(s_axi_bready),
-        .s_axi_bresp(s_axi_bresp),
-        .s_axi_bvalid(s_axi_bvalid),
-        .s_axi_rdata(s_axi_rdata),
-        .s_axi_rready(s_axi_rready),
-        .s_axi_rresp(s_axi_rresp),
-        .s_axi_rvalid(s_axi_rvalid),
-        .s_axi_wdata(s_axi_wdata),
-        .s_axi_wready(s_axi_wready),
-        .s_axi_wstrb(s_axi_wstrb),
-        .s_axi_wvalid(s_axi_wvalid),
-        .temp_out(temp_out),
-        .vauxn0(vauxn0),
-        .vauxn1(vauxn1),
-        .vauxn10(vauxn10),
-        .vauxn11(vauxn11),
-        .vauxn2(vauxn2),
-        .vauxn3(vauxn3),
-        .vauxn8(vauxn8),
-        .vauxn9(vauxn9),
-        .vauxp0(vauxp0),
-        .vauxp1(vauxp1),
-        .vauxp10(vauxp10),
-        .vauxp11(vauxp11),
-        .vauxp2(vauxp2),
-        .vauxp3(vauxp3),
-        .vauxp8(vauxp8),
-        .vauxp9(vauxp9),
-        .vn_in(vn_in),
-        .vp_in(vp_in));
-endmodule
-
-(* ORIG_REF_NAME = "drp_arbiter" *) 
 module system_xadc_wiz_0_0_drp_arbiter
    (den_C,
     dwe_C,
@@ -1828,7 +1621,212 @@ module system_xadc_wiz_0_0_drp_arbiter
         .Q(\state_reg_n_0_[1] ));
 endmodule
 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_address_decoder" *) 
+(* NotValidForBitStream *)
+module system_xadc_wiz_0_0
+   (s_axi_aclk,
+    s_axi_aresetn,
+    s_axi_awaddr,
+    s_axi_awvalid,
+    s_axi_awready,
+    s_axi_wdata,
+    s_axi_wstrb,
+    s_axi_wvalid,
+    s_axi_wready,
+    s_axi_bresp,
+    s_axi_bvalid,
+    s_axi_bready,
+    s_axi_araddr,
+    s_axi_arvalid,
+    s_axi_arready,
+    s_axi_rdata,
+    s_axi_rresp,
+    s_axi_rvalid,
+    s_axi_rready,
+    ip2intc_irpt,
+    vauxp0,
+    vauxn0,
+    vauxp1,
+    vauxn1,
+    vauxp2,
+    vauxn2,
+    vauxp3,
+    vauxn3,
+    vauxp8,
+    vauxn8,
+    vauxp9,
+    vauxn9,
+    vauxp10,
+    vauxn10,
+    vauxp11,
+    vauxn11,
+    busy_out,
+    channel_out,
+    eoc_out,
+    eos_out,
+    ot_out,
+    vccaux_alarm_out,
+    vccint_alarm_out,
+    user_temp_alarm_out,
+    alarm_out,
+    temp_out,
+    vp_in,
+    vn_in);
+  input s_axi_aclk;
+  input s_axi_aresetn;
+  input [10:0]s_axi_awaddr;
+  input s_axi_awvalid;
+  output s_axi_awready;
+  input [31:0]s_axi_wdata;
+  input [3:0]s_axi_wstrb;
+  input s_axi_wvalid;
+  output s_axi_wready;
+  output [1:0]s_axi_bresp;
+  output s_axi_bvalid;
+  input s_axi_bready;
+  input [10:0]s_axi_araddr;
+  input s_axi_arvalid;
+  output s_axi_arready;
+  output [31:0]s_axi_rdata;
+  output [1:0]s_axi_rresp;
+  output s_axi_rvalid;
+  input s_axi_rready;
+  output ip2intc_irpt;
+  input vauxp0;
+  input vauxn0;
+  input vauxp1;
+  input vauxn1;
+  input vauxp2;
+  input vauxn2;
+  input vauxp3;
+  input vauxn3;
+  input vauxp8;
+  input vauxn8;
+  input vauxp9;
+  input vauxn9;
+  input vauxp10;
+  input vauxn10;
+  input vauxp11;
+  input vauxn11;
+  output busy_out;
+  output [4:0]channel_out;
+  output eoc_out;
+  output eos_out;
+  output ot_out;
+  output vccaux_alarm_out;
+  output vccint_alarm_out;
+  output user_temp_alarm_out;
+  output alarm_out;
+  output [11:0]temp_out;
+  input vp_in;
+  input vn_in;
+
+  wire alarm_out;
+  wire busy_out;
+  wire [4:0]channel_out;
+  wire eoc_out;
+  wire eos_out;
+  wire ip2intc_irpt;
+  wire ot_out;
+  wire s_axi_aclk;
+  wire [10:0]s_axi_araddr;
+  wire s_axi_aresetn;
+  wire s_axi_arready;
+  wire s_axi_arvalid;
+  wire [10:0]s_axi_awaddr;
+  wire s_axi_awready;
+  wire s_axi_awvalid;
+  wire s_axi_bready;
+  wire [1:0]s_axi_bresp;
+  wire s_axi_bvalid;
+  wire [31:0]s_axi_rdata;
+  wire s_axi_rready;
+  wire [1:0]s_axi_rresp;
+  wire s_axi_rvalid;
+  wire [31:0]s_axi_wdata;
+  wire s_axi_wready;
+  wire [3:0]s_axi_wstrb;
+  wire s_axi_wvalid;
+  wire [11:0]temp_out;
+  wire user_temp_alarm_out;
+  wire vauxn0;
+  wire vauxn1;
+  wire vauxn10;
+  wire vauxn11;
+  wire vauxn2;
+  wire vauxn3;
+  wire vauxn8;
+  wire vauxn9;
+  wire vauxp0;
+  wire vauxp1;
+  wire vauxp10;
+  wire vauxp11;
+  wire vauxp2;
+  wire vauxp3;
+  wire vauxp8;
+  wire vauxp9;
+  wire vccaux_alarm_out;
+  wire vccint_alarm_out;
+  wire vn_in;
+  wire vp_in;
+  wire [6:3]NLW_U0_alarm_out_UNCONNECTED;
+
+  (* C_FAMILY = "virtex7" *) 
+  (* C_INCLUDE_INTR = "1" *) 
+  (* C_INSTANCE = "system_xadc_wiz_0_0_axi_xadc" *) 
+  (* C_SIM_MONITOR_FILE = "design.txt" *) 
+  (* C_S_AXI_ADDR_WIDTH = "11" *) 
+  (* C_S_AXI_DATA_WIDTH = "32" *) 
+  (* hdl = "VHDL" *) 
+  (* ip_group = "LOGICORE" *) 
+  (* iptype = "PERIPHERAL" *) 
+  system_xadc_wiz_0_0_system_xadc_wiz_0_0_axi_xadc U0
+       (.alarm_out({alarm_out,NLW_U0_alarm_out_UNCONNECTED[6:3],vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out}),
+        .busy_out(busy_out),
+        .channel_out(channel_out),
+        .eoc_out(eoc_out),
+        .eos_out(eos_out),
+        .ip2intc_irpt(ip2intc_irpt),
+        .ot_out(ot_out),
+        .s_axi_aclk(s_axi_aclk),
+        .s_axi_araddr(s_axi_araddr),
+        .s_axi_aresetn(s_axi_aresetn),
+        .s_axi_arready(s_axi_arready),
+        .s_axi_arvalid(s_axi_arvalid),
+        .s_axi_awaddr(s_axi_awaddr),
+        .s_axi_awready(s_axi_awready),
+        .s_axi_awvalid(s_axi_awvalid),
+        .s_axi_bready(s_axi_bready),
+        .s_axi_bresp(s_axi_bresp),
+        .s_axi_bvalid(s_axi_bvalid),
+        .s_axi_rdata(s_axi_rdata),
+        .s_axi_rready(s_axi_rready),
+        .s_axi_rresp(s_axi_rresp),
+        .s_axi_rvalid(s_axi_rvalid),
+        .s_axi_wdata(s_axi_wdata),
+        .s_axi_wready(s_axi_wready),
+        .s_axi_wstrb(s_axi_wstrb),
+        .s_axi_wvalid(s_axi_wvalid),
+        .temp_out(temp_out),
+        .vauxn0(vauxn0),
+        .vauxn1(vauxn1),
+        .vauxn10(vauxn10),
+        .vauxn11(vauxn11),
+        .vauxn2(vauxn2),
+        .vauxn3(vauxn3),
+        .vauxn8(vauxn8),
+        .vauxn9(vauxn9),
+        .vauxp0(vauxp0),
+        .vauxp1(vauxp1),
+        .vauxp10(vauxp10),
+        .vauxp11(vauxp11),
+        .vauxp2(vauxp2),
+        .vauxp3(vauxp3),
+        .vauxp8(vauxp8),
+        .vauxp9(vauxp9),
+        .vn_in(vn_in),
+        .vp_in(vp_in));
+endmodule
+
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_address_decoder
    (dwe_d1_reg,
     hard_macro_rst_reg_reg,
@@ -3435,7 +3433,6 @@ module system_xadc_wiz_0_0_system_xadc_wiz_0_0_address_decoder
         .O(\temp_rd_wait_cycle_reg_reg[0] ));
 endmodule
 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_axi_lite_ipif" *) 
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_axi_lite_ipif
    (dwe_d1_reg,
     bus2ip_reset_active_high,
@@ -3845,8 +3842,7 @@ endmodule
 
 (* C_FAMILY = "virtex7" *) (* C_INCLUDE_INTR = "1" *) (* C_INSTANCE = "system_xadc_wiz_0_0_axi_xadc" *) 
 (* C_SIM_MONITOR_FILE = "design.txt" *) (* C_S_AXI_ADDR_WIDTH = "11" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_axi_xadc" *) (* hdl = "VHDL" *) (* ip_group = "LOGICORE" *) 
-(* iptype = "PERIPHERAL" *) 
+(* hdl = "VHDL" *) (* ip_group = "LOGICORE" *) (* iptype = "PERIPHERAL" *) 
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_axi_xadc
    (s_axi_aclk,
     s_axi_aresetn,
@@ -4581,7 +4577,6 @@ module system_xadc_wiz_0_0_system_xadc_wiz_0_0_axi_xadc
         .R(reset2ip_reset));
 endmodule
 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_interrupt_control" *) 
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_interrupt_control
    (irpt_wrack_d1,
     \GEN_IP_IRPT_STATUS_REG[0].GEN_REG_STATUS.ip_irpt_status_reg_reg[0]_0 ,
@@ -5411,7 +5406,6 @@ module system_xadc_wiz_0_0_system_xadc_wiz_0_0_interrupt_control
         .R(reset2ip_reset));
 endmodule
 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_slave_attachment" *) 
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_slave_attachment
    (dwe_d1_reg,
     SR,
@@ -6249,7 +6243,6 @@ module system_xadc_wiz_0_0_system_xadc_wiz_0_0_slave_attachment
         .R(SR));
 endmodule
 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_soft_reset" *) 
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_soft_reset
    (sw_rst_cond_d1,
     wrack,
@@ -6715,7 +6708,6 @@ module system_xadc_wiz_0_0_system_xadc_wiz_0_0_soft_reset
         .R(bus2ip_reset_active_high));
 endmodule
 
-(* ORIG_REF_NAME = "system_xadc_wiz_0_0_xadc_core_drp" *) 
 module system_xadc_wiz_0_0_system_xadc_wiz_0_0_xadc_core_drp
    (D,
     eoc_out,
@@ -7602,7 +7594,6 @@ module system_xadc_wiz_0_0_system_xadc_wiz_0_0_xadc_core_drp
         .temp_out(temp_out));
 endmodule
 
-(* ORIG_REF_NAME = "temperature_update" *) 
 module system_xadc_wiz_0_0_temperature_update
    (den_A,
     bbusy_A,

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_node:1.0
-// IP Revision: 4
+// IP Revision: 5
 
-(* X_CORE_INFO = "sc_node_v1_0_4_top,Vivado 2017.1" *)
-(* CHECK_LICENSE_TYPE = "bd_44e3_m00wn_0,sc_node_v1_0_4_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_44e3_m00wn_0,sc_node_v1_0_4_top,{x_ipProduct=Vivado 2017.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_node,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=spartan7,C_FIFO_IP=0,C_DISABLE_IP=0,C_FIFO_SIZE=5,C_FIFO_TYPE=0,C_ENABLE_PIPELINING=0x01,C_SYNCHRONIZATION_STAGES=2,C_NUM_SI=2,C_NUM_MI=1,C_CHANNEL=1,C_PAYLD_WIDTH=160,C_S_NUM_BYTES_ARRAY=0x0000001000000010,C_M_NUM_BYTES_ARRAY=0x00000010,C_USER_BITS_PER_BYTE=0,C_ARBITER_MODE=1,C_SC_ROUTE_WIDTH=1,C_I\
+(* X_CORE_INFO = "sc_node_v1_0_5_top,Vivado 2017.2" *)
+(* CHECK_LICENSE_TYPE = "bd_44e3_m00wn_0,sc_node_v1_0_5_top,{}" *)
+(* CORE_GENERATION_INFO = "bd_44e3_m00wn_0,sc_node_v1_0_5_top,{x_ipProduct=Vivado 2017.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_node,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=spartan7,C_FIFO_IP=0,C_DISABLE_IP=0,C_FIFO_SIZE=5,C_FIFO_TYPE=0,C_ENABLE_PIPELINING=0x01,C_SYNCHRONIZATION_STAGES=2,C_NUM_SI=2,C_NUM_MI=1,C_CHANNEL=1,C_PAYLD_WIDTH=160,C_S_NUM_BYTES_ARRAY=0x0000001000000010,C_M_NUM_BYTES_ARRAY=0x00000010,C_USER_BITS_PER_BYTE=0,C_ARBITER_MODE=1,C_SC_ROUTE_WIDTH=1,C_I\
 D_WIDTH=2,C_ADDR_WIDTH=32,C_USER_WIDTH=0,C_MAX_PAYLD_BYTES=16,C_S_PIPELINE=0,C_M_PIPELINE=0,C_M_SEND_PIPELINE=0,C_S_LATENCY=1,C_ACLK_RELATIONSHIP=0,C_ACLKEN_CONVERSION=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_44e3_m00wn_0 (
@@ -110,7 +110,7 @@ output wire s_axis_arb_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS_ARB TDATA" *)
 input wire [15 : 0] s_axis_arb_tdata;
 
-  sc_node_v1_0_4_top #(
+  sc_node_v1_0_5_top #(
     .C_FAMILY("spartan7"),
     .C_FIFO_IP(0),
     .C_DISABLE_IP(0),

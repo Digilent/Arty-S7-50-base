@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Fri May 26 04:30:24 2017
--- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_microblaze_0_axi_intc_0/system_microblaze_0_axi_intc_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+-- Date        : Mon Jul 24 14:29:00 2017
+-- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_microblaze_0_axi_intc_0 -prefix
+--               system_microblaze_0_axi_intc_0_ system_microblaze_0_axi_intc_0_sim_netlist.vhdl
 -- Design      : system_microblaze_0_axi_intc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -85,8 +85,6 @@ entity system_microblaze_0_axi_intc_0_address_decoder is
     p_0_in : in STD_LOGIC;
     bus2ip_rnw_i_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_address_decoder : entity is "address_decoder";
 end system_microblaze_0_axi_intc_0_address_decoder;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_address_decoder is
@@ -1357,8 +1355,6 @@ entity system_microblaze_0_axi_intc_0_shared_ram_ivar is
     \bus2ip_addr_i_reg[5]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ivar_index_axi_clk : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_shared_ram_ivar : entity is "shared_ram_ivar";
 end system_microblaze_0_axi_intc_0_shared_ram_ivar;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_shared_ram_ivar is
@@ -2683,8 +2679,6 @@ entity system_microblaze_0_axi_intc_0_intc_core is
     Bus_RNW_reg : in STD_LOGIC;
     p_17_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_intc_core : entity is "intc_core";
 end system_microblaze_0_axi_intc_0_intc_core;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_intc_core is
@@ -4128,8 +4122,6 @@ entity system_microblaze_0_axi_intc_0_slave_attachment is
     p_0_in37_in : in STD_LOGIC;
     p_0_in35_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_slave_attachment : entity is "slave_attachment";
 end system_microblaze_0_axi_intc_0_slave_attachment;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_slave_attachment is
@@ -5431,8 +5423,6 @@ entity system_microblaze_0_axi_intc_0_axi_lite_ipif is
     p_0_in37_in : in STD_LOGIC;
     p_0_in35_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end system_microblaze_0_axi_intc_0_axi_lite_ipif;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_axi_lite_ipif is
@@ -5607,8 +5597,6 @@ entity system_microblaze_0_axi_intc_0_axi_intc is
   attribute C_S_AXI_ADDR_WIDTH of system_microblaze_0_axi_intc_0_axi_intc : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of system_microblaze_0_axi_intc_0_axi_intc : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_axi_intc : entity is "axi_intc";
   attribute hdl : string;
   attribute hdl of system_microblaze_0_axi_intc_0_axi_intc : entity is "VHDL";
   attribute imp_netlist : string;
@@ -5930,7 +5918,7 @@ entity system_microblaze_0_axi_intc_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_microblaze_0_axi_intc_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_microblaze_0_axi_intc_0 : entity is "axi_intc,Vivado 2017.1";
+  attribute x_core_info of system_microblaze_0_axi_intc_0 : entity is "axi_intc,Vivado 2017.2";
 end system_microblaze_0_axi_intc_0;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0 is

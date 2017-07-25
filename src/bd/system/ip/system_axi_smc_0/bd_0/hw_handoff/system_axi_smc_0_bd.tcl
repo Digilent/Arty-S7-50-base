@@ -20,7 +20,7 @@ set script_folder [_tcl::get_script_folder]
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2017.1
+set scripts_vivado_version 2017.2
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -978,7 +978,7 @@ CONFIG.WDATA_WIDTH {32} \
   set_property -dict [ list \
 CONFIG.ADDR_WIDTH {32} \
 CONFIG.IS_CASCADED {0} \
-CONFIG.MEP_IDENTIFIER {1} \
+CONFIG.MEP_IDENTIFIER {0} \
 CONFIG.MEP_IDENTIFIER_WIDTH {2} \
 CONFIG.RDATA_WIDTH {32} \
 CONFIG.READ_WRITE_MODE {READ_WRITE} \
@@ -1388,8 +1388,8 @@ CONFIG.M_WUSER_WIDTH {0} \
 CONFIG.NUM_MSC {1} \
 CONFIG.RDATA_WIDTH {128} \
 CONFIG.READ_WRITE_MODE {READ_WRITE} \
-CONFIG.SSC000_ROUTE {0b00} \
-CONFIG.SSC001_ROUTE {0b01} \
+CONFIG.SSC000_ROUTE {0b01} \
+CONFIG.SSC001_ROUTE {0b00} \
 CONFIG.SSC002_ROUTE {0b10} \
 CONFIG.SSC003_ROUTE {0b00} \
 CONFIG.SSC_ROUTE_WIDTH {2} \

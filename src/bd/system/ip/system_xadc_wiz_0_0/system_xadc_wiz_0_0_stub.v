@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Fri May 26 04:31:10 2017
-// Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_stub.v
+// Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+// Date        : Mon Jul 24 14:31:41 2017
+// Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode synth_stub -rename_top system_xadc_wiz_0_0 -prefix
+//               system_xadc_wiz_0_0_ system_xadc_wiz_0_0_stub.v
 // Design      : system_xadc_wiz_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_node:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 `timescale 1ns/1ps
 
@@ -108,7 +108,7 @@ output wire s_axis_arb_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS_ARB TDATA" *)
 input wire [15 : 0] s_axis_arb_tdata;
 
-  sc_node_v1_0_4_top #(
+  sc_node_v1_0_5_top #(
     .C_FAMILY("spartan7"),
     .C_FIFO_IP(0),
     .C_DISABLE_IP(0),
