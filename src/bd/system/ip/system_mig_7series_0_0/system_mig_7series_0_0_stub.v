@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Mon Jul 24 14:33:40 2017
-// Host        : WK73 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode synth_stub -rename_top system_mig_7series_0_0 -prefix
-//               system_mig_7series_0_0_ system_mig_7series_0_0_stub.v
+// Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
+// Date        : Thu Aug 17 03:52:43 2017
+// Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               C:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0_stub.v
 // Design      : system_mig_7series_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1
