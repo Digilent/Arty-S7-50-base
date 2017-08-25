@@ -1971,3 +1971,22 @@ MIG: 17:45:37 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <I
 MIG: 17:45:37 : Running implementation.xit
 MIG: 17:45:38 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
 MIG: 17:45:38 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 17:23:18 : xml_input_file: board.prj
+MIG: 17:23:18 : Absolute path of xml_input_file: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/board.prj
+MIG: 17:23:18 : xml_input_file: board.prj
+MIG: 17:23:18 : Absolute path of xml_input_file: c:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_mig_7series_0_0/board.prj
+MIG: 17:43:31 : Running synthesis.xit
+MIG: 17:43:31 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 17:43:31 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 17:43:32 : Running vhdl_synth_rpr.xit
+MIG: 17:43:32 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 17:43:32 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 17:43:32 : Running simulation.xit
+MIG: 17:43:32 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 17:43:32 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 17:43:32 : Running vlog_sim_rpr.xit .. PRASAD DBG1
+MIG: 17:43:32 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 17:43:32 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 
+MIG: 17:43:32 : Running implementation.xit
+MIG: 17:43:32 : IGN:     <ModuleName>system_mig_7series_0_2</ModuleName> <==>     <ModuleName>system_mig_7series_0_0</ModuleName> 
+MIG: 17:43:32 : IGN:         <InputClkFreq>99.997</InputClkFreq> <==>         <InputClkFreq>99.997</InputClkFreq> 

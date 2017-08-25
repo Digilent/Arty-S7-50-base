@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Mon Jul 24 14:29:00 2017
--- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim -rename_top system_microblaze_0_axi_intc_0 -prefix
---               system_microblaze_0_axi_intc_0_ system_microblaze_0_axi_intc_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
+-- Date        : Thu Aug 24 17:45:21 2017
+-- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               C:/sam_work/git/digilent/Arty-S7-50-base/src/bd/system/ip/system_microblaze_0_axi_intc_0/system_microblaze_0_axi_intc_0_sim_netlist.vhdl
 -- Design      : system_microblaze_0_axi_intc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -85,6 +85,8 @@ entity system_microblaze_0_axi_intc_0_address_decoder is
     p_0_in : in STD_LOGIC;
     bus2ip_rnw_i_reg : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_address_decoder : entity is "address_decoder";
 end system_microblaze_0_axi_intc_0_address_decoder;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_address_decoder is
@@ -1355,6 +1357,8 @@ entity system_microblaze_0_axi_intc_0_shared_ram_ivar is
     \bus2ip_addr_i_reg[5]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ivar_index_axi_clk : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_shared_ram_ivar : entity is "shared_ram_ivar";
 end system_microblaze_0_axi_intc_0_shared_ram_ivar;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_shared_ram_ivar is
@@ -2679,6 +2683,8 @@ entity system_microblaze_0_axi_intc_0_intc_core is
     Bus_RNW_reg : in STD_LOGIC;
     p_17_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_intc_core : entity is "intc_core";
 end system_microblaze_0_axi_intc_0_intc_core;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_intc_core is
@@ -2742,6 +2748,9 @@ architecture STRUCTURE of system_microblaze_0_axi_intc_0_intc_core is
   signal idle_and_irq_d1 : STD_LOGIC;
   signal in_idle : STD_LOGIC;
   signal intr_d1 : STD_LOGIC;
+  signal intr_ff : STD_LOGIC_VECTOR ( 0 to 1 );
+  attribute async_reg : string;
+  attribute async_reg of intr_ff : signal is "true";
   signal irq_gen : STD_LOGIC;
   signal irq_gen_i : STD_LOGIC;
   signal irq_gen_i_2_n_0 : STD_LOGIC;
@@ -2791,9 +2800,15 @@ architecture STRUCTURE of system_microblaze_0_axi_intc_0_intc_core is
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \ACK_EN_SYNC_ON_AXI_CLK_GEN.NO_CASCADE_MASTER.first_ack_active_i_1\ : label is "soft_lutpair27";
   attribute SOFT_HLUTNM of \ACK_EN_SYNC_ON_AXI_CLK_GEN.NO_CASCADE_MASTER.first_ack_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \INTR_DETECT_GEN[4].LVL_DETECT_GEN.hw_intr[4]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \INTR_DETECT_GEN[3].LVL_DETECT_GEN.hw_intr[3]_i_1\ : label is "soft_lutpair23";
+  attribute ASYNC_REG_boolean : boolean;
+  attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[0]\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[0]\ : label is "yes";
+  attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[1]\ : label is "yes";
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[0]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \IPR_GEN.ipr[1]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \IPR_GEN.ipr[1]_i_1\ : label is "soft_lutpair26";
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[3]_i_1\ : label is "soft_lutpair28";
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[4]_i_1\ : label is "soft_lutpair25";
   attribute SOFT_HLUTNM of \IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state[1]_i_1\ : label is "soft_lutpair22";
@@ -2801,9 +2816,9 @@ architecture STRUCTURE of system_microblaze_0_axi_intc_0_intc_core is
   attribute SOFT_HLUTNM of \IVAR_INDEX_SYNC_ON_AXI_CLK_GEN.idle_and_irq_d1_i_1\ : label is "soft_lutpair24";
   attribute SOFT_HLUTNM of \IVAR_INDEX_SYNC_ON_AXI_CLK_GEN.ivar_index_sample_en_i_1\ : label is "soft_lutpair24";
   attribute SOFT_HLUTNM of \IVR_GEN.ivr[1]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \IVR_GEN.ivr[1]_i_2\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \IVR_GEN.ivr[1]_i_2\ : label is "soft_lutpair26";
   attribute SOFT_HLUTNM of \IVR_GEN.ivr[1]_i_3\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \IVR_GEN.ivr[2]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \IVR_GEN.ivr[2]_i_1\ : label is "soft_lutpair23";
   attribute SOFT_HLUTNM of irq_gen_i_1 : label is "soft_lutpair21";
 begin
   \IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state_reg[1]_0\ <= \^irq_level_gen.irq_level_fast_on_axi_clk_gen.current_state_reg[1]_0\;
@@ -3038,13 +3053,35 @@ begin
       Q => hw_intr(3),
       R => '0'
     );
+\INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => s_axi_aclk,
+      CE => '1',
+      D => intr(4),
+      Q => intr_ff(0),
+      R => '0'
+    );
+\INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => s_axi_aclk,
+      CE => '1',
+      D => intr_ff(0),
+      Q => intr_ff(1),
+      R => '0'
+    );
 \INTR_DETECT_GEN[4].LVL_DETECT_GEN.hw_intr[4]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"00E0"
     )
         port map (
       I0 => hw_intr(4),
-      I1 => intr(4),
+      I1 => intr_ff(1),
       I2 => s_axi_aresetn,
       I3 => p_4_in,
       O => \INTR_DETECT_GEN[4].LVL_DETECT_GEN.hw_intr[4]_i_1_n_0\
@@ -4122,6 +4159,8 @@ entity system_microblaze_0_axi_intc_0_slave_attachment is
     p_0_in37_in : in STD_LOGIC;
     p_0_in35_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_slave_attachment : entity is "slave_attachment";
 end system_microblaze_0_axi_intc_0_slave_attachment;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_slave_attachment is
@@ -5423,6 +5462,8 @@ entity system_microblaze_0_axi_intc_0_axi_lite_ipif is
     p_0_in37_in : in STD_LOGIC;
     p_0_in35_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end system_microblaze_0_axi_intc_0_axi_lite_ipif;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0_axi_lite_ipif is
@@ -5548,7 +5589,7 @@ entity system_microblaze_0_axi_intc_0_axi_intc is
     processor_ack_out : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute C_ASYNC_INTR : integer;
-  attribute C_ASYNC_INTR of system_microblaze_0_axi_intc_0_axi_intc : entity is -32;
+  attribute C_ASYNC_INTR of system_microblaze_0_axi_intc_0_axi_intc : entity is -16;
   attribute C_CASCADE_MASTER : integer;
   attribute C_CASCADE_MASTER of system_microblaze_0_axi_intc_0_axi_intc : entity is 0;
   attribute C_DISABLE_SYNCHRONIZERS : integer;
@@ -5597,6 +5638,8 @@ entity system_microblaze_0_axi_intc_0_axi_intc is
   attribute C_S_AXI_ADDR_WIDTH of system_microblaze_0_axi_intc_0_axi_intc : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of system_microblaze_0_axi_intc_0_axi_intc : entity is 32;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of system_microblaze_0_axi_intc_0_axi_intc : entity is "axi_intc";
   attribute hdl : string;
   attribute hdl of system_microblaze_0_axi_intc_0_axi_intc : entity is "VHDL";
   attribute imp_netlist : string;
@@ -5918,13 +5961,13 @@ entity system_microblaze_0_axi_intc_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_microblaze_0_axi_intc_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_microblaze_0_axi_intc_0 : entity is "axi_intc,Vivado 2017.2";
+  attribute x_core_info of system_microblaze_0_axi_intc_0 : entity is "axi_intc,Vivado 2017.2.1";
 end system_microblaze_0_axi_intc_0;
 
 architecture STRUCTURE of system_microblaze_0_axi_intc_0 is
   signal NLW_U0_processor_ack_out_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_ASYNC_INTR : integer;
-  attribute C_ASYNC_INTR of U0 : label is -32;
+  attribute C_ASYNC_INTR of U0 : label is -16;
   attribute C_CASCADE_MASTER : integer;
   attribute C_CASCADE_MASTER of U0 : label is 0;
   attribute C_DISABLE_SYNCHRONIZERS : integer;

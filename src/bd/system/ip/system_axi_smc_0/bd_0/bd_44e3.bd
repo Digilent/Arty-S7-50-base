@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xE60F33E142527F33" bd:bdsource="SBD" bd:device="xc7s50csga324-1" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2017.2" bd:top="bd_44e3" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xE60F33E142527F33" bd:bdsource="SBD" bd:device="xc7s50csga324-1" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2017.2.1" bd:top="bd_44e3" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -1512,8 +1512,8 @@
           <spirit:configurableElementValue spirit:referenceId="HAS_LOCK">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_BURST">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MSC">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SSC000_ROUTE">0b01</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SSC001_ROUTE">0b00</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SSC000_ROUTE">0b00</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SSC001_ROUTE">0b01</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SSC002_ROUTE">0b10</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SSC003_ROUTE">0b00</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -3190,7 +3190,7 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_44e3_s00tr_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="IS_CASCADED">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER_WIDTH">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ADDR_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_ID_WIDTH">0</spirit:configurableElementValue>
